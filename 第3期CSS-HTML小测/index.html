@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单登录</title>
+</head>
+<body>
+  <nav>
+    <a href="">导航1</a>
+    <a href="">导航2</a>
+    <a href="">导航3</a>
+  </nav>
+  <form novalidate>
+    <fieldset>
+      <legend>登录</legend>
+      <div class="login-content">
+        <p class="account">
+          <input name="account" placeholder="请输入账号/手机" required autofocus tabindex="1">
+        </p>
+        <p>
+          <input type="password" name="password" placeholder="请输入密码" required tabindex="2">
+          <a href>忘记密码</a>
+        </p>
+        <p>
+          <input name="code" placeholder="请输入验证码" required autocomplete="off" tabindex="3">
+        </p>
+        <button type="submit">登录</button>
+        <a href="http://">立即注册</a>
+      </div>
+    </fieldset>
+  </form>
+
+  <ol>
+    <li>&lt;form&gt; + submit</li>
+    <li>&lt;fieldset&gt; + &lt;legend&gt;</li>
+    <li>placeholder</li>
+    <li>name</li>
+    <li>required验证 novalidate</li>
+    <li>autocomplete="off"</li>
+    <li>tabindex/autofocus</li>
+    <li>type="text"可以缺省</li>
+    <li>忘记密码，立即注册最好使用&lt;a&gt;</li>
+  </ol>
+</body>
+</html>
